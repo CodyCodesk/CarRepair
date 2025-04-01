@@ -37,7 +37,7 @@ const MapSection = () => {
                 </svg>
                 <div>
                   <p className="font-semibold mb-1">Adresse</p>
-                  <p>Dr.-Steinbeißer-Straße 3, 83026 Rosenheim</p>
+                  <p>KC Performance, Dr.-Steinbeißer-Straße 3, 83026 Rosenheim</p>
                 </div>
               </div>
               
