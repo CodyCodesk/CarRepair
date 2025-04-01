@@ -13,7 +13,7 @@ export default function DienstleistungenPage() {
         <div className="container">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center">Unsere Dienstleistungen</h1>
           <p className="text-xl text-center max-w-3xl mx-auto">
-            Wir bieten qualitativ hochwertige Dienstleistungen für Fahrzeuge aller Arten und Marken. Entdecken Sie unser umfassendes Angebot.
+            testWir bieten qualitativ hochwertige Dienstleistungen für Fahrzeuge aller Arten und Marken. Entdecken Sie unser umfassendes Angebot.
           </p>
         </div>
       </section>
