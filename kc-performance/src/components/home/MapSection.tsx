@@ -11,16 +11,21 @@ const MapSection = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Unser Standort</h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Besuchen Sie uns in Rosenheim. Wir freuen uns auf Ihren Besuch!
+            Besuchen Sie uns in der Dr.-Steinbeißer-Straße 3, 83026 Rosenheim
           </p>
         </div>
         
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <div className="h-[400px] w-full relative">
-            {/* This is a placeholder for the map. In a real implementation, you would use Google Maps or another map provider */}
-            <div className="absolute inset-0 bg-gray-200 flex items-center justify-center">
-              <p className="text-gray-500 text-lg">Google Maps Einbettung würde hier erscheinen</p>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.397675875344!2d12.12872277685435!3d47.50080997117892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479d1b1b9b8a3a2f%3A0x5e3e51449ec1e1a1!2sDr.-Steinbeißer-Straße%203%2C%2083026%20Rosenheim!5e0!3m2!1sde!2sde!4v1719930000000!5m2!1sde!2sde"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={false}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
           
           <div className="p-6 bg-[#1a3c6e] text-white">
@@ -32,7 +37,7 @@ const MapSection = () => {
                 </svg>
                 <div>
                   <p className="font-semibold mb-1">Adresse</p>
-                  <p>Rosenheim/Bayern/Deutschland</p>
+                  <p>Dr.-Steinbeißer-Straße 3, 83026 Rosenheim</p>
                 </div>
               </div>
               
