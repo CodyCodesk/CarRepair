@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1a3c6e;
+  --accent: #e63946;
+  --background: #ffffff;
+  --background-secondary: #f8f9fa;
+  --text: #333333;
+}
+
+body {
+  color: var(--text);
+  background: var(--background);
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.btn-primary {
+  @apply bg-[#e63946] text-white font-semibold py-2 px-6 rounded-md hover:bg-[#d62836] transition-colors duration-300;
+}
+
+.btn-secondary {
+  @apply bg-[#1a3c6e] text-white font-semibold py-2 px-6 rounded-md hover:bg-[#15325d] transition-colors duration-300;
+}
+
+.btn-outline {
+  @apply border-2 border-[#1a3c6e] text-[#1a3c6e] font-semibold py-2 px-6 rounded-md hover:bg-[#1a3c6e] hover:text-white transition-colors duration-300;
+}
+
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+}
+
+.section {
+  @apply py-12 md:py-16 lg:py-20;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300;
+}
+
+.nav-link {
+  @apply text-[#333333] hover:text-[#e63946] transition-colors duration-300;
+}
+
+.nav-link-active {
+  @apply text-[#e63946] font-semibold;
+}
+
+.footer {
+  @apply bg-[#1a3c6e] text-white py-12;
+}
+
+.footer-link {
+  @apply text-white hover:text-[#e63946] transition-colors duration-300;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  @apply fixed top-0 left-0 w-full h-full bg-[#1a3c6e] z-50 transform transition-transform duration-300;
+}
+
+.mobile-menu-open {
+  @apply translate-x-0;
+}
+
+.mobile-menu-closed {
+  @apply -translate-x-full;
+}
+
+/* Hero section */
+.hero {
+  @apply relative bg-[#1a3c6e] text-white py-16 md:py-24 lg:py-32;
+}
+
+.hero-overlay {
+  @apply absolute inset-0 bg-black opacity-50;
+}
+
+/* Service cards */
+.service-card {
+  @apply flex flex-col h-full bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300;
+}
+
+.service-card-image {
+  @apply w-full h-48 object-cover;
+}
+
+.service-card-content {
+  @apply p-6 flex-grow;
+}
+
+/* Testimonials */
+.testimonial {
+  @apply bg-[#f8f9fa] p-6 rounded-lg shadow-sm;
+}
+
+.testimonial-quote {
+  @apply text-[#1a3c6e] text-lg italic mb-4;
+}
+
+.testimonial-author {
+  @apply font-semibold text-[#333333];
+}
+
+/* Contact form */
+.form-input {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1a3c6e] focus:border-transparent;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700 mb-1;
+}
+
+.form-group {
+  @apply mb-4;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes slideInFromBottom {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-slideIn {
+  animation: slideInFromBottom 0.5s ease-in-out;
+}
